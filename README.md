@@ -57,6 +57,6 @@ Do what it says [Command -  do-what-it-says]
 
   ## Demo Images
 
-    ### Do-what-it-says command
-    ![Image of Yaktocat]("./images/do-what-it-says.PNG")
+    ** Do-what-it-says command**
+    ![Image of Yaktocat](./images/do-what-it-says.PNG)
 
