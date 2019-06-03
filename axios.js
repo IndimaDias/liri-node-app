@@ -66,6 +66,7 @@ function searchAxios(userCommand, searchVal){
             else if (userCommand === 'concert-this'){
                 // read the array in a for loop and display results. 
                 // moment package is used to format the event date
+                console.log("\n");
                 console.log("******************Band Information********************");
                 for(var i =0; i,queryResults.length; i++){
 
