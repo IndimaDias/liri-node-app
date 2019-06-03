@@ -58,5 +58,5 @@ Do what it says [Command -  do-what-it-says]
   ## Demo Images
 
     ** Do-what-it-says command**
-    ![Screenshot 1](do-what-it-says.PNG)
-  
+    ![Screenshot 1](file://do-what-it-says.PNG)
+
