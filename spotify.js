@@ -12,19 +12,22 @@ var spotify = new Spotify(keys.spotify);
 
 module.exports = {searchSpotify};
 
-function searchSpotify(request){
+function searchSpotify(searchVal){
+   
 
-    if (request === "" || request === null) {
-        request = "The Sign";
+    if (searchVal === "" || searchVal === null) {
+        searchVal = "The Sign";
     }
+    
 
     spotify
-    .search({ type: 'track', query: request },function(err, data) {
+    .search({ type: 'track', query: searchVal },function(err, data) {
         if (err) {
           return console.log('Error occurred: ' + err);
         }
         var songInfo = data.tracks.items[0];
     //   console.log(songInfo); 
+        console.log("\n");
         console.log("Artist :" + songInfo.artists[0].name +
                     "\nSong Name : " + songInfo.name +
                     "\nAlbum Name : " + songInfo.album.name +
