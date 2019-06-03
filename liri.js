@@ -10,11 +10,8 @@ var axios = require('axios');
 // Include moment package
 var moment = require("moment");
 
-// Include node-spotify-api package
-var Spotify = require("node-spotify-api");
-
-// access API keys
-var spotify = new Spotify(keys.spotify);
+// Include spotify.js file
+var spotify = require("./spotify.js");
 
 // reading the arguments list 
 var args = process.argv;
@@ -35,7 +32,7 @@ else{
 // variable to assign the url 
 var queryURL = "";
 
-// console.log(userCommand + " " + request);
+
 
 // validate user command and create url for the API
 switch(userCommand){
@@ -57,42 +54,21 @@ switch(userCommand){
         break;
 
     case "spotify-this-song":
-      if (request === "" || request === null) {
-          request = "The Sign";
-      }
-
+        // call search function in the spotify.js
+        spotify.searchSpotify(request);
       break;
 }  
 
 
 var queryResults = [];
 
-if (userCommand === "spotify-this-song"){
-  spotify
-    .search({ type: 'track', query: request },function(err, data) {
-        if (err) {
-          return console.log('Error occurred: ' + err);
-        }
-        var songInfo = data.tracks.items[0];
-    //   console.log(songInfo); 
-        console.log("Artist :" + songInfo.artists[0].name +
-                    "\nSong Name : " + songInfo.name +
-                    "\nAlbum Name : " + songInfo.album.name +
-                    "\nPreview Link : " + songInfo.preview_url );
-                     
-    });
-}
-else{
-
-
+    if (userCommand !== "spotify-this-song"){
 // run axios request to the api 
     axios.get(queryURL).then(
         function(response){
         //    assign data to an array 
             queryResults = response.data;
-            // console.log(queryResults);
-
-            
+           
             if(userCommand === 'movie-this'){
                 // find Rotten tomatoes rating for the movie
                 try{
@@ -121,11 +97,12 @@ else{
                     console.log("Venue name : " + queryResults[i].venue.name + 
                     "\nVenue Location : " + queryResults[i].venue.city + " " + queryResults[i].venue.country +
                     "\nDate of the event : " + moment(queryResults[i].datetime).format("MM/DD/YYYY"));                
+                    console.log("                                             ");
+                    console.log("****************************************************************");
+                    console.log("                                             ");
                 }
 
-                console.log("                                             ");
-                console.log("****************************************************************");
-                console.log("                                             ");
+
 
             }
         }
