@@ -58,5 +58,5 @@ Do what it says [Command -  do-what-it-says]
   ## Demo Images
 
     ** Do-what-it-says command**
-    ![Screenshot1](images/do-what-it-says.PNG)
+    ![Screenshot1](liri-node-app/images/do-what-it-says.PNG)
 
