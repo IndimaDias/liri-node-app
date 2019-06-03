@@ -28,6 +28,7 @@ var userCommand = args[2];
 // %20 code for white space is assigned if user enters a name with spaces 
 var request = args.slice(3,args.length).join("%20");
 
+
 // variable to assign the url 
 var queryURL = "";
 
@@ -41,8 +42,12 @@ switch(userCommand){
     
     case "movie-this":
         // if user didn't enter a movie name
-        if (request === null) {
-            request = "'Mr. Nobody."
+        if (request === "" || request === null) {
+           
+            request = "Mr.%20Nobody.";
+            console.log("If you haven't watched ' Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
+            console.log("It's on Netflix!");
+            console.log("                                    ");
         }
         queryURL =  "http://www.omdbapi.com/?t=" + request + "&y=&plot=short&apikey=trilogy";
         
