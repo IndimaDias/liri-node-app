@@ -50,7 +50,8 @@ function searchAxios(userCommand, searchVal){
                     // if the Rotten tomato rating is not defined 
                 rating = "Rating not available";
                 }
-                console.log("\n");            
+                console.log("\n");      
+                console.log("******************Movie Information********************");
                 console.log("Title : " + queryResults.Title + 
                 "\nYear : " + queryResults.Year +
                 "\nIMDB Rating : " + queryResults.imdbRating +
@@ -59,13 +60,15 @@ function searchAxios(userCommand, searchVal){
                 "\nLanguage : " + queryResults.Language +
                 "\nPlot : " + queryResults.Plot +
                 "\nActors : " + queryResults.Actors);
+                console.log("\n");
 
             }
             else if (userCommand === 'concert-this'){
                 // read the array in a for loop and display results. 
                 // moment package is used to format the event date
+                console.log("******************Band Information********************");
                 for(var i =0; i,queryResults.length; i++){
-                    
+
                     console.log("\n");
                     console.log("Venue name : " + queryResults[i].venue.name + 
                     "\nVenue Location : " + queryResults[i].venue.city + " " + queryResults[i].venue.country +

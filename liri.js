@@ -54,12 +54,22 @@ switch (userCommand){
         
             var fileData = data.split(",");
         
-            request = fileData[1].replace(/"/g,"");
-            spotify.searchSpotify(request);
+            var spotifyRequest = fileData[1].replace(/"/g,"");
+            var concertRequest = fileData[3].replace(/"/g,"").replace(/ /g,"%20");
+            var movieRequest = fileData[5].replace(/"/g,"").replace(/ /g,"%20");
+
+            // console.log("Featured Song");
+            spotify.searchSpotify(spotifyRequest);
+
+            // console.log("Featured Movie");
+            axios.searchAxios('movie-this',movieRequest);
+
+            // console.log("Featured Band");            
+            axios.searchAxios('concert-this',concertRequest);
             
         });
         break;
-        
+
     default :
         console.log ("No such command");
         break;
