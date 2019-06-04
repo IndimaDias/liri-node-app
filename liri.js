@@ -27,13 +27,11 @@ var userCommand = args[2];
 var request = "";
 var runAxious = false;
 
-
 // reading the user search request (song name , movie name , band name);
 // %20 code for white space is assigned if user enters a name with spaces 
 switch (userCommand){
-    case "spotify-this-song":
-       request = args.slice(3,args.length).join(" ");
-       spotify.searchSpotify(request);
+    case "spotify-this-song":       
+       spotify.searchSpotify(args,"S");
       break;
 
     case "concert-this":
@@ -55,11 +53,12 @@ switch (userCommand){
             var fileData = data.split(",");
         
             var spotifyRequest = fileData[1].replace(/"/g,"");
+            console.log(spotifyRequest);
             var concertRequest = fileData[3].replace(/"/g,"").replace(/ /g,"%20");
             var movieRequest = fileData[5].replace(/"/g,"").replace(/ /g,"%20");
 
             // console.log("Featured Song");
-            spotify.searchSpotify(spotifyRequest);
+            spotify.searchSpotify(spotifyRequest,"D");
 
             // console.log("Featured Movie");
             axios.searchAxios('movie-this',movieRequest);
