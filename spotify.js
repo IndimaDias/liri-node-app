@@ -42,10 +42,10 @@ function searchSpotify(searchVal, searchOption){
           return console.log('Error occurred: ' + err);
         }
         var songInfo = data.tracks.items[0];
-        var txtString = "\nArtist :" + songInfo.artists[0].name + " "+
-                        "\nSong Name : " + songInfo.name + " "+
-                        "\nAlbum Name : " + songInfo.album.name + " "+
-                        "\nPreview Link : " + songInfo.preview_url + " ";
+        var txtString = "\nArtist :" + songInfo.artists[0].name + "\n"+
+                        "Song Name : " + songInfo.name + " \n"+
+                        "Album Name : " + songInfo.album.name + "\n"+
+                        "Preview Link : " + songInfo.preview_url + "\n ";
 
         if(searchOption === 'S'){
             commandStr = "spotify-this-song " + queryVal + " ";
@@ -60,7 +60,7 @@ function searchSpotify(searchVal, searchOption){
         console.log("******************Song Information********************");
         console.log(txtString);
 
-        fs.appendFile("log.txt",commandStr + txtString, function(err,){
+        fs.appendFile("log.txt",commandStr + txtString, function(err){
             if(err){
                 return console.log(err);
             }

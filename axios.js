@@ -6,11 +6,16 @@ var axios = require('axios');
 // Include moment package
 var moment = require("moment");
 
+var fs = require("fs");
+
 var queryURL = "";
 
 var queryResults = [];
 
+var queryStr = "";
+
 module.exports = {searchAxios};
+
 
 function searchAxios(userCommand, searchVal){
 
@@ -52,15 +57,17 @@ function searchAxios(userCommand, searchVal){
                 }
                 console.log("\n");      
                 console.log("******************Movie Information********************");
-                console.log("Title : " + queryResults.Title + 
-                "\nYear : " + queryResults.Year +
-                "\nIMDB Rating : " + queryResults.imdbRating +
-                "\nRotten Tomatoes Ratin : " + rating +
-                "\nCountry : " + queryResults.Country + 
-                "\nLanguage : " + queryResults.Language +
-                "\nPlot : " + queryResults.Plot +
-                "\nActors : " + queryResults.Actors);
+                queryStr = ("Title : " + queryResults.Title + "\n" +
+                "Year : " + queryResults.Year + "\n" + 
+                "IMDB Rating : " + queryResults.imdbRating + "\n" +
+                "Rotten Tomatoes Ratin : " + rating + "\n" +
+                "Country : " + queryResults.Country + "\n" +
+                "Language : " + queryResults.Language + "\n" +
+                "Plot : " + queryResults.Plot + "\n" +
+                "Actors : " + queryResults.Actors + "\n");
+                console.log(queryStr);
                 console.log("\n");
+
 
             }
             else if (userCommand === 'concert-this'){
@@ -70,10 +77,11 @@ function searchAxios(userCommand, searchVal){
                 console.log("******************Band Information********************");
                 for(var i =0; i,queryResults.length; i++){
 
-                    console.log("\n");
-                    console.log("Venue name : " + queryResults[i].venue.name + 
-                    "\nVenue Location : " + queryResults[i].venue.city + " " + queryResults[i].venue.country +
-                    "\nDate of the event : " + moment(queryResults[i].datetime).format("MM/DD/YYYY"));                
+                    
+                    queryStr = ("\nVenue name : " + queryResults[i].venue.name + "\n" +
+                    "Venue Location : " + queryResults[i].venue.city + " " + queryResults[i].venue.country + "\n" +
+                    "Date of the event : " + moment(queryResults[i].datetime).format("MM/DD/YYYY"));  
+                    console.log(queryStr);              
                     console.log("                                             ");
                     console.log("****************************************************************");
                     console.log("                                             ");
@@ -82,6 +90,14 @@ function searchAxios(userCommand, searchVal){
 
 
             }
+           
+            fs.appendFile("log.txt",userCommand + " " + seachVal + "" + queryStr,function(err){
+                if(err){
+                   return console.log(err);
+                }
+            })
+
+            
         }
     ).catch(function(error){
         error.message;
