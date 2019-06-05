@@ -55,7 +55,7 @@ Do what it says [Command -  do-what-it-says]
   * Git
   * GitHub
 
-  ## Demo Images
+ 
 
     Do what it says
     [Do what it says](https://github.com/IndimaDias/liri-node-app/blob/master/concert-this.PNG)
