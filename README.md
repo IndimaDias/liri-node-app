@@ -56,7 +56,7 @@ Do what it says [Command -  do-what-it-says]
   * GitHub
 
   ## Demo Images
-
+[I'm an inline-style link] (https://github.com/IndimaDias/liri-node-app/blob/master/concert-this.PNG)
     **Do-what-it-says command**
     ![Do what it says] (./do-what-it-says.PNG)
     
