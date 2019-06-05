@@ -57,26 +57,26 @@ Do what it says [Command -  do-what-it-says]
 
  
 
-    Do what it says
-    [Do what it says](https://github.com/IndimaDias/liri-node-app/blob/master/concert-this.PNG)
+   **Do what it says** 
+    ![Do what it says](https://github.com/IndimaDias/liri-node-app/blob/master/concert-this.PNG)
 
-    **Movie-this <movie>**
+   **Movie-this <movie>**
     ![Movie this](https://github.com/IndimaDias/liri-node-app/blob/master/movie-this.PNG)
 
-    **Movie-this no parameter**
-    [Movie this no parameter](https://github.com/IndimaDias/liri-node-app/blob/master/movie-this-noParameter.PNG)
+   **Movie-this no parameter**
+    ![Movie this no parameter](https://github.com/IndimaDias/liri-node-app/blob/master/movie-this-noParameter.PNG)
 
-    **Concert-this <band>**
-    [Concert this](https://github.com/IndimaDias/liri-node-app/blob/master/concert-this.PNG)
+   **Concert-this <band>**
+    ![Concert this](https://github.com/IndimaDias/liri-node-app/blob/master/concert-this.PNG)
 
-    **Spotify-this-song <song>**
-    [Spotify this](https://github.com/IndimaDias/liri-node-app/blob/master/spotify-this.PNG)
+   **Spotify-this-song <song>**
+    ![Spotify this](https://github.com/IndimaDias/liri-node-app/blob/master/spotify-this.PNG)
 
-    **Spitify-this-song no parameter**
-    [Spotify this no parameter](https://github.com/IndimaDias/liri-node-app/blob/master/spotify-this-noParameter.PNG)
+   **Spitify-this-song no parameter**
+    ![Spotify this no parameter](https://github.com/IndimaDias/liri-node-app/blob/master/spotify-this-noParameter.PNG)
 
-    **Invalid command**
-    [Screenshot 1](https://github.com/IndimaDias/liri-node-app/blob/master/NoCommand.PNG)
+   **Invalid command**
+    ![Invalid Command](https://github.com/IndimaDias/liri-node-app/blob/master/NoCommand.PNG)
 
 
 
