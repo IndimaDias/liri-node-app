@@ -58,7 +58,7 @@ Do what it says [Command -  do-what-it-says]
   ## Demo Images
 
     **Do-what-it-says command**
-    ![alt text](https://github.com/IndimaDias/liri-node-app/blob/master/do-what-it-says.PNG "Logo Title Text 1")
+    ![alt text](https://github.com/IndimaDias/liri-node-app/do-what-it-says.PNG "Logo Title Text 1")
     
 
     **Movie-this <movie>**
