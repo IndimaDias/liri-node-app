@@ -58,7 +58,7 @@ Do what it says [Command -  do-what-it-says]
   ## Demo Images
 
     Do what it says
-    [Do what it says] (https://github.com/IndimaDias/liri-node-app/blob/master/concert-this.PNG)
+    [Do what it says](https://github.com/IndimaDias/liri-node-app/blob/master/concert-this.PNG)
 
     **Movie-this <movie>**
     ![Movie this](https://github.com/IndimaDias/liri-node-app/blob/master/movie-this.PNG)
