@@ -58,26 +58,26 @@ Do what it says [Command -  do-what-it-says]
   ## Demo Images
 
     **Do-what-it-says command**
-    ![alt text](https://github.com/IndimaDias/liri-node-app/do-what-it-says.PNG "Logo Title Text 1")
+    ![Do what it says] (./do-what-it-says.PNG)
     
 
     **Movie-this <movie>**
-    ![Screenshot 2](file://do-what-it-says.PNG)
+    ![Movie this](./movie-this.png)
 
     **Movie-this no parameter**
-    ![Screenshot 1](file://do-what-it-says.PNG)
+    ![Movie this no parameter](./movie-this-noParameter.PNG)
 
     **Concert-this <band>**
-    ![Screenshot 1](file://do-what-it-says.PNG)
+    ![Concert this](./concert-this.PNG)
 
     **Spotify-this-song <song>**
-    ![Screenshot 1](file://do-what-it-says.PNG)
+    ![Spotify this](./spotify-this.PNG)
 
     **Spitify-this-song no parameter**
-    ![Screenshot 1](file://do-what-it-says.PNG)
+    ![Spotify this no parameter](./spotify-this-noParameter.PNG)
 
     **Invalid command**
-    ![Screenshot 1](file://do-what-it-says.PNG)
+    ![Screenshot 1](./NoCommand.PNG)
 
 
 

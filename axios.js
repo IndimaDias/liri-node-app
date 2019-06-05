@@ -14,6 +14,8 @@ var queryResults = [];
 
 var queryStr = "";
 
+var devider = "";
+
 module.exports = {searchAxios};
 
 
@@ -55,51 +57,67 @@ function searchAxios(userCommand, searchVal){
                     // if the Rotten tomato rating is not defined 
                 rating = "Rating not available";
                 }
+                devider = "******************Movie Information********************\n"
                 console.log("\n");      
-                console.log("******************Movie Information********************");
-                queryStr = ("Title : " + queryResults.Title + "\n" +
-                "Year : " + queryResults.Year + "\n" + 
-                "IMDB Rating : " + queryResults.imdbRating + "\n" +
-                "Rotten Tomatoes Ratin : " + rating + "\n" +
-                "Country : " + queryResults.Country + "\n" +
-                "Language : " + queryResults.Language + "\n" +
-                "Plot : " + queryResults.Plot + "\n" +
-                "Actors : " + queryResults.Actors + "\n");
+
+                console.log(devider);
+
+                queryStr = ["Title : " + queryResults.Title ,
+                "Year : " + queryResults.Year , 
+                "IMDB Rating : " + queryResults.imdbRating ,
+                "Rotten Tomatoes Ratin : " + rating ,
+                "Country : " + queryResults.Country ,
+                "Language : " + queryResults.Language ,
+                "Plot : " + queryResults.Plot ,
+                "Actors : " + queryResults.Actors ,
+                "\n"].join("\n");
+
                 console.log(queryStr);
                 console.log("\n");
 
-
+                logData(devider + userCommand + " " + searchVal + "\n", queryStr );
             }
             else if (userCommand === 'concert-this'){
                 // read the array in a for loop and display results. 
                 // moment package is used to format the event date
                 console.log("\n");
-                console.log("******************Band Information********************");
+                devider = "******************Band Information********************\n"
+                console.log(devider);
+
+                logData("\n" + devider + userCommand + " " + searchVal,"");
+
                 for(var i =0; i,queryResults.length; i++){
 
                     
-                    queryStr = ("\nVenue name : " + queryResults[i].venue.name + "\n" +
-                    "Venue Location : " + queryResults[i].venue.city + " " + queryResults[i].venue.country + "\n" +
-                    "Date of the event : " + moment(queryResults[i].datetime).format("MM/DD/YYYY"));  
+                    queryStr = ["Venue name : " + queryResults[i].venue.name ,
+                    "Venue Location : " + queryResults[i].venue.city + " " + queryResults[i].venue.country ,
+                    "Date of the event : " + moment(queryResults[i].datetime).format("MM/DD/YYYY"),
+                    " ",
+                    "**********************************************************",
+                    "  "].join("\n");  
                     console.log(queryStr);              
-                    console.log("                                             ");
-                    console.log("****************************************************************");
-                    console.log("                                             ");
+                    logData("",queryStr);
+                    
                 }
 
-
-
+                
             }
-           
-            fs.appendFile("log.txt",userCommand + " " + seachVal + "" + queryStr,function(err){
-                if(err){
-                   return console.log(err);
-                }
-            })
-
             
+            
+            // console.log(queryStr, 'outside')
+            
+
         }
     ).catch(function(error){
         error.message;
     });
+
+    function logData(SearchCommand, queryStr) {
+        fs.appendFile("log.txt","\n" + SearchCommand + queryStr,function(err){
+           
+            if(err){
+               return console.log(err);
+            }
+        })
+    }
 }

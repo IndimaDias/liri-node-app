@@ -1,25 +1,245 @@
-spotify-this-song C:\Program Files\nodejs\node.exe,C:\unh\liri-node-app\liri,spotify-this-song,Heal,the,world
-Artist :Michael Jackson
-Song Name : Heal the World
-Album Name : Dangerous
-Preview Link : https://p.scdn.co/mp3-preview/12261e2c16b7eb17508fb25a411691380893151d?cid=fc3809af9570423fab1aa2d446ebc45cspotify-this-song Heal the world
-Artist :Michael Jackson
-Song Name : Heal the World
-Album Name : Dangerous
-Preview Link : https://p.scdn.co/mp3-preview/12261e2c16b7eb17508fb25a411691380893151d?cid=fc3809af9570423fab1aa2d446ebc45cspotify-this-song Heal the world
-Artist :Michael Jackson 
-Song Name : Heal the World 
-Album Name : Dangerous 
-Preview Link : https://p.scdn.co/mp3-preview/12261e2c16b7eb17508fb25a411691380893151d?cid=fc3809af9570423fab1aa2d446ebc45c spotify-this-song Hello
-Artist :Adele 
-Song Name : Hello 
-Album Name : 25 
-Preview Link : https://p.scdn.co/mp3-preview/0b90429fd554bad6785faa2b8931d613db4a0ee4?cid=fc3809af9570423fab1aa2d446ebc45c do-what-it-says 
-Artist :Backstreet Boys 
-Song Name : I Want It That Way 
-Album Name : The Hits--Chapter One 
-Preview Link : https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=fc3809af9570423fab1aa2d446ebc45c spotify-this-song Hello 
-Artist :Adele 
-Song Name : Hello 
-Album Name : 25 
-Preview Link : https://p.scdn.co/mp3-preview/0b90429fd554bad6785faa2b8931d613db4a0ee4?cid=fc3809af9570423fab1aa2d446ebc45c 
+spotify-this-song You raise me up
+Artist :Josh Groban
+
+Song Name : You Raise Me Up
+
+Album Name : Closer
+
+Preview Link : https://p.scdn.co/mp3-preview/f90f0b380ff1eaae7bc2416250e44aa39973eef4?cid=fc3809af9570423fab1aa2d446ebc45c
+******************Song Information********************
+spotify-this-song You raise me up
+Artist :Josh Groban
+
+Song Name : You Raise Me Up
+
+Album Name : Closer
+
+Preview Link : https://p.scdn.co/mp3-preview/f90f0b380ff1eaae7bc2416250e44aa39973eef4?cid=fc3809af9570423fab1aa2d446ebc45c
+******************Song Information********************
+spotify-this-song You raise me up
+Artist :Josh Groban
+
+Song Name : You Raise Me Up
+
+Album Name : Closer
+
+Preview Link : https://p.scdn.co/mp3-preview/f90f0b380ff1eaae7bc2416250e44aa39973eef4?cid=fc3809af9570423fab1aa2d446ebc45c
+
+  
+
+******************Song Information********************
+spotify-this-song You raise me up
+Artist :Josh Groban
+
+Song Name : You Raise Me Up
+
+Album Name : Closer
+
+Preview Link : https://p.scdn.co/mp3-preview/f90f0b380ff1eaae7bc2416250e44aa39973eef4?cid=fc3809af9570423fab1aa2d446ebc45c
+
+  
+
+******************Band Information********************
+concert-thistlc
+Venue name : Firefly Music Festival
+Venue Location : Dover United States
+Date of the event : 06/21/2019
+ 
+**********************************************************
+  
+Venue name : Twin Cities Pride
+Venue Location : Minneapolis United States
+Date of the event : 06/22/2019
+ 
+**********************************************************
+  
+Venue name : Hard Rock Live
+Venue Location : Orlando United States
+Date of the event : 06/28/2019
+ 
+**********************************************************
+  
+Venue name : Hard Rock Cafe
+Venue Location : Biloxi United States
+Date of the event : 06/29/2019
+ 
+**********************************************************
+  
+Venue name : California Exposition & State Fair
+Venue Location : Sacramento United States
+Date of the event : 07/14/2019
+ 
+**********************************************************
+  
+Venue name : Tuscaloosa Amphitheater
+Venue Location : Tuscaloosa United States
+Date of the event : 07/23/2019
+ 
+**********************************************************
+  
+Venue name : Lakewood Amphitheatre
+Venue Location : Atlanta United States
+Date of the event : 07/24/2019
+ 
+**********************************************************
+  
+Venue name : PNC Music Pavilion
+Venue Location : Charlotte United States
+Date of the event : 07/26/2019
+ 
+**********************************************************
+  
+Venue name : Coastal Credit Union Music Park At Walnut Creek
+Venue Location : Raleigh United States
+Date of the event : 07/27/2019
+ 
+**********************************************************
+  
+Venue name : Jiffy Lube Live
+Venue Location : Bristow United States
+Date of the event : 07/30/2019
+ 
+**********************************************************
+  
+Venue name : Veterans United Home Loans Amphitheater
+Venue Location : Virginia Beach United States
+Date of the event : 07/31/2019
+ 
+**********************************************************
+  
+Venue name : Northwell Health at Jones Beach Theater
+Venue Location : Wantagh United States
+Date of the event : 08/01/2019
+ 
+**********************************************************
+  
+Venue name : Bank of New Hampshire Pavilion
+Venue Location : Gilford United States
+Date of the event : 08/03/2019
+ 
+**********************************************************
+  
+Venue name : Budweiser Stage
+Venue Location : Toronto Canada
+Date of the event : 08/07/2019
+ 
+**********************************************************
+  
+Venue name : Bethel Woods Center For the Arts
+Venue Location : Bethel United States
+Date of the event : 08/09/2019
+ 
+**********************************************************
+  
+Venue name : KeyBank Pavilion
+Venue Location : Burgettstown United States
+Date of the event : 08/08/2019
+ 
+**********************************************************
+  
+Venue name : Xfinity Center
+Venue Location : Mansfield United States
+Date of the event : 08/11/2019
+ 
+**********************************************************
+  
+Venue name : DTE Energy Music Theatre
+Venue Location : Clarkston United States
+Date of the event : 08/17/2019
+ 
+**********************************************************
+  
+Venue name : Hollywood Casino Amphitheatre
+Venue Location : Tinley Park United States
+Date of the event : 08/18/2019
+ 
+**********************************************************
+  
+Venue name : Austin360 Amphitheater
+Venue Location : Austin United States
+Date of the event : 08/22/2019
+ 
+**********************************************************
+  
+Venue name : The Cynthia Woods Mitchell Pavilion presented by Huntsman
+Venue Location : The Woodlands United States
+Date of the event : 08/23/2019
+ 
+**********************************************************
+  
+Venue name : The Pavilion at Toyota Music Factory
+Venue Location : Irving United States
+Date of the event : 08/25/2019
+ 
+**********************************************************
+  
+Venue name : Don Haskins Center
+Venue Location : El Paso United States
+Date of the event : 08/27/2019
+ 
+**********************************************************
+  
+Venue name : Shoreline Amphitheatre
+Venue Location : Mountain View United States
+Date of the event : 08/30/2019
+ 
+**********************************************************
+  
+Venue name : FivePoint Amphitheatre
+Venue Location : Irvine United States
+Date of the event : 08/31/2019
+ 
+**********************************************************
+  
+Venue name : North Island Credit Union Ampitheatre
+Venue Location : Chula Vista United States
+Date of the event : 09/01/2019
+ 
+**********************************************************
+  
+Venue name : PNE Amphitheatre
+Venue Location : Vancouver Canada
+Date of the event : 09/02/2019
+ 
+**********************************************************
+  
+Venue name : River Cree Casino & Resort
+Venue Location : Enoch Canada
+Date of the event : 09/04/2019
+ 
+**********************************************************
+  
+Venue name : Blossom Music Center
+Venue Location : Cuyahoga Falls United States
+Date of the event : 08/15/2019
+ 
+**********************************************************
+  
+Venue name : The Arkansas Music Pavilion
+Venue Location : Rogers United States
+Date of the event : 08/20/2019
+ 
+**********************************************************
+  
+******************Movie Information********************
+movie-this titanicTitle : Titanic
+Year : 1997
+IMDB Rating : 7.8
+Rotten Tomatoes Ratin : 89%
+Country : USA
+Language : English, Swedish, Italian
+Plot : A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+Actors : Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
+
+
+******************Movie Information********************
+movie-this titanic
+Title : Titanic
+Year : 1997
+IMDB Rating : 7.8
+Rotten Tomatoes Ratin : 89%
+Country : USA
+Language : English, Swedish, Italian
+Plot : A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.
+Actors : Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates
+

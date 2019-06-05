@@ -14,11 +14,12 @@ var spotify = new Spotify(keys.spotify);
 
 var queryVal = "";
 var commandStr = "";
+var devider = "\n******************Song Information********************\n";
 
 module.exports = {searchSpotify};
 
 function searchSpotify(searchVal, searchOption){
-   console.log(searchVal);
+//    console.log(searchVal);
 
     
     if(searchOption === "S"){
@@ -42,25 +43,26 @@ function searchSpotify(searchVal, searchOption){
           return console.log('Error occurred: ' + err);
         }
         var songInfo = data.tracks.items[0];
-        var txtString = "\nArtist :" + songInfo.artists[0].name + "\n"+
-                        "Song Name : " + songInfo.name + " \n"+
-                        "Album Name : " + songInfo.album.name + "\n"+
-                        "Preview Link : " + songInfo.preview_url + "\n ";
+        var txtString =[ "Artist :" + songInfo.artists[0].name,
+                        "Song Name : " + songInfo.name ,
+                        "Album Name : " + songInfo.album.name ,
+                        "Preview Link : " + songInfo.preview_url,
+                        "  " ].join("\n\n");
 
         if(searchOption === 'S'){
-            commandStr = "spotify-this-song " + queryVal + " ";
+            commandStr = "spotify-this-song " + queryVal + "\n";
         }
         else{
-            commandStr = "do-what-it-says " ;
+            commandStr = "do-what-it-says\n" ;
         }
         
 
     //   console.log(songInfo); 
         console.log("\n");
-        console.log("******************Song Information********************");
+        console.log(devider);
         console.log(txtString);
 
-        fs.appendFile("log.txt",commandStr + txtString, function(err){
+        fs.appendFile("log.txt","\n" + devider + commandStr + txtString, function(err){
             if(err){
                 return console.log(err);
             }
